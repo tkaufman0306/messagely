@@ -1,0 +1,52 @@
+<html>
+
+<body>
+
+    <div id="need-auth" style="display: none">
+        <h1>Messagely</h1>
+
+        <form id="register-form">
+            <h2>Register</h2>
+            <input id="register-username" placeholder="username"><br>
+            <input id="register-password" placeholder="password" type="password"><br>
+            <input id="register-fname" placeholder="first name"><br>
+            <input id="register-lname" placeholder="last name"><br>
+            <input id="register-phone" placeholder="phone"><br>
+            <button>Sign Up</button>
+        </form>
+
+        <form id="login-form">
+            <h2>Login</h2>
+            <input id="login-username" placeholder="username">
+            <input id="login-password" placeholder="password" type="password">
+            <button>Log In</button>
+        </form>
+    </div>
+
+    <div id="has-auth" style="display: none">
+        <h1 id="username"></h1>
+
+        <h2>Messages From You</h2>
+        <ul id="msgs-from"></ul>
+
+        <h2>Messages To You</h2>
+        <ul id="msgs-to"></ul>
+
+        <h2>New Message</h2>
+
+        <form id="new-message-form">
+            To: <select id="newmsg-to"></select><br>
+            <textarea id="newmsg-body" placeholder="message here"></textarea><br>
+            <button>Send</button>
+        </form>
+
+        <p><button id="logout">Logout</button></p>
+
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="messagely.js"></script>
+</body>
+
+
+</html>
